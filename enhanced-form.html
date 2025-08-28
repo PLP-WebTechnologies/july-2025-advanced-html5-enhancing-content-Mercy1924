@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Enhanced HTML5 page with lists, tables, media, and a complete form.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced HTML5 Content & Forms</title>
+</head>
+<body>
+
+  <header>
+    <h1>Enhanced HTML5 Content & Forms</h1>
+    <p>This page demonstrates lists, tables, media, and a complete HTML5 form.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Lists Example</h2>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Table Example</h2>
+      <table border="1">
+        <caption>Course Schedule</caption>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Course</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>Web Development</td>
+            <td>10:00 AM</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>Database Systems</td>
+            <td>1:00 PM</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Media Example</h2>
+      <figure>
+        <img src="https://via.placeholder.com/300" alt="Placeholder image of a webpage" width="300">
+        <figcaption>A sample image included for accessibility and SEO.</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Registration Form</h2>
+      <form action="#" method="post">
+        
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="John Doe" required><br><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required autocomplete="on"><br><br>
+
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" min="10" max="100" required><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Details</legend>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required><br><br>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" 
+                 placeholder="At least 8 characters"
+                 required minlength="8" pattern=".{8,}"><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+          <p>Choose your subscription plan:</p>
+          <input type="radio" id="basic" name="plan" value="basic" required>
+          <label for="basic">Basic</label>
+
+          <input type="radio" id="premium" name="plan" value="premium">
+          <label for="premium">Premium</label><br><br>
+
+          <label for="topics">Topics of Interest:</label><br>
+          <input type="checkbox" id="html" name="topics" value="HTML">
+          <label for="html">HTML</label>
+          <input type="checkbox" id="css" name="topics" value="CSS">
+          <label for="css">CSS</label>
+          <input type="checkbox" id="js" name="topics" value="JavaScript">
+          <label for="js">JavaScript</label><br><br>
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Other Details</legend>
+          <label for="bio">Short Bio:</label><br>
+          <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Write something about yourself..." required></textarea><br><br>
+
+          <label for="resume">Upload Resume:</label>
+          <input type="file" id="resume" name="resume" accept=".pdf,.docx"><br><br>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Enhanced HTML5 Assignment</p>
+  </footer>
+
+</body>
+</html>
